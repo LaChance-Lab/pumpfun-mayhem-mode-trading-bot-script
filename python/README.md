@@ -1,1 +1,2 @@
-# Coming Soon
+# Monad Trading Bots(Rust)
+Coming Soon
