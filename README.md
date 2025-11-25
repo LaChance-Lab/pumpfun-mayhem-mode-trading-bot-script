@@ -51,3 +51,4 @@ Ultra-fast automation for the Monad ecosystem covering sniping, volume engineeri
 https://t.me/lachancelab
 
 ## License
+[License](https://github.com/LaChance-Lab/monad-nad.fun-trading-bundler-sniper-volume-bot/blob/main/LICENSE)
