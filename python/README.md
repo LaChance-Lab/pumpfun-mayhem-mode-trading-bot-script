@@ -1,2 +1,2 @@
-# Monad Trading Bots(Rust)
+# Monad Trading Bots(Python)
 Coming Soon

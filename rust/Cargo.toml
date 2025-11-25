@@ -1,0 +1,28 @@
+[package]
+name = "nadfun_trading_bot"
+version = "0.2.1"
+edition = "2021"
+description = "Rust Trading Bot for Nad.fun"
+license = "MIT"
+keywords = ["memecoin", "nadfun", "nadfun-sdk"]
+
+readme = "README.md"
+
+
+[lib]
+name = "name = "nadfun_trading_bot"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+alloy = { version = "1.0.24", features = ["full", "signer-keystore", "pubsub"] }
+serde = { version = "1.0", features = ["derive"] }
+anyhow = "1.0"
+futures-util = "0.3"
+async-stream = "0.3"
+rayon = "1.8"
+chrono = "0.4"
+clap = { version = "4.5", features = ["derive", "env"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
