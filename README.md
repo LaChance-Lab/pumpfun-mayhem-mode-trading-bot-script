@@ -1,70 +1,53 @@
-# Monad Nad.fun trading Bot - Ultra-Fast Trading Automation for the Monad EcoSystem
+# Monad Nad.fun Trading Suite
 
-Monad Sniper Bot / Monad Volume Bot / Monad Multi-Wallet Bot / Monad Copy-Trader / Monad Token Tools
+Ultra-fast automation for the Monad ecosystem covering sniping, volume engineering, multi-wallet orchestration, copy trading, and auxiliary token operations.
 
-A modern, open-source, Rust-powered sniper & volume bot engineered exclusively for the Monad ecosystem. Designed for extreme speed, multi-wallet execution, and high-frequency trading on Monad’s ultra-low-latency EVM architecture.
+## Overview
+- Native to Monad’s low-latency EVM, optimized for sub-second execution across hot wallets.
+- Modular packages: Bundler, Sniper, Volume Bot, Copy Trading Bot, and Token Tools.
+- Built for professional operators who require deterministic controls, telemetry, and rapid rollouts.
+
+## Technology Stack
+- **Rust** — core execution engines, mempool listeners, anti-MEV logic.
+- **TypeScript** — orchestration layers, UI dashboards, Telegram/Discord bridges.
+- **Python** — analytics modules, wallet intelligence workflows, batch utilities.
+
+## Operational Safeguards
+- Explicit limits across caps, retries, and slippage on every strategy.
+- Hot-wallet focus; cold storage keys remain offline at all times.
+- Deployments assume compliance with local regulations and exchange or RPC terms.
+
+## Capabilities
+### Sniper Engine
+- >20 configurable filters (liquidity, bytecode, creator heuristics, launch windows).
+- Auto-detects liquidity pools immediately after deployment; triggers instant buy.
+- Integrated auto-sell module with profit, drawdown, and time-based exits.
+- Mempool-native anti-MEV protections plus AFK watchdog mode.
+
+### Signal Scrapers
+- Telegram, Discord, and Twitter/X keyword scrapers with wallet tagging.
+- Supports custom regex/pattern filters and priority queues for downstream bots.
+
+### Volume Engine
+- Generates organic-looking flow via randomized buy ranges and delays.
+- Supports unlimited wallets with staggered funding and fee awareness.
+- Anti-pattern layer to avoid repetitive trade signatures.
+
+### Copy-Trading Suite
+- Wallet parser handles any Monad contract, exporting data to CSV/Excel.
+- Custom rule chains, thresholds, and tags for curated follow lists.
+- Wallet tracker surfaces every trade with PnL deltas and timeline summaries.
+
+### Multi-Wallet Bundler
+- Launches synchronized buy sequences across N wallets with delta distribution.
+- Configurable MONAD allocation matrices plus anti-front-run logic.
+- Enables multi-stage entries and exits per wallet group.
+
+### Monad Tooling
+- Wallet generator (EVM compatible) and balance checker (MON + ERC-20).
+- Contract scanner, event watcher, and in-house mempool monitor for telemetry.
 
 ## Contact
 https://t.me/lachancelab
-
-
-## Languages
-Rust
-Typescript
-Python
-
-## 🔒 Safety First
-Full control over caps, retries, slippage
-Hot-wallet only — keep cold storage safe
-Respect local regulations & platform TOS
-
-## Packages
-Bundler
-Sniper
-Volume Bot
-Copy Trading Bot
-
-### Sniper Bot
-#### Ultra-fast sniper for Monad tokens
-20+ customizable filters
-Sniping newly deployed contracts
-Automatic detection of new liquidity pools
-Instant-execution BUY bot
-Auto-sell engine with triggers
-Anti-MEV protections optimized for Monad mempool
-AFK mode with autonomous monitoring
-#### Scrapers
-Telegram scraper
-Discord scraper
-Twitter/X keyword & wallet scraper
-
-
-###Monad Volume Engine
-Generate organic trading activity for Monad tokens
-Custom buy ranges & random delays
-Unlimited wallets
-Anti-pattern behavior to avoid detection
-
-### Monad Copy-Trading
-#### Wallet Parser / Analyzer
-Parse wallets from any Monad contract
-Support for unlimited wallets
-Custom filters, logic chains & thresholds
-Export results to Excel
-#### Wallet Tracker
-Track every trade of any watched wallet
-Clean UI with trade summaries and analytics
-
-### Monad Multi-Wallet Bundler
-Launch multi-wallet buy sequences
-Configure wallet count & MONAD allocation
-Automatic Δ-distribution across wallets
-Anti-sniper & anti-front-run logic
-
-### 💜 Monad Tools
-Monad wallet generator (EVM)
-Balance checker (MON + tokens)
-Contract scanner & event watcher
-Mempool monitor (in-house)
 
 ## License
